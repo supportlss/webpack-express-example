@@ -1,7 +1,6 @@
 const express = require('express');
 
 const app = express();
-const path = require('path');
 const webpack = require('webpack');
 const WebpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
@@ -22,4 +21,4 @@ app.use(webpackHotMiddleware(compiler));
 // app.use(express.static('../dist'));
 
 
-app.listen(3001, () => console.log('App listening on port 3001!'));
+app.listen(3000, () => console.log('App listening on port 3000!'));
